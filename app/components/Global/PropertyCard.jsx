@@ -12,6 +12,7 @@ const PropertyCard = ({
   bathrooms,
   size,
   agentName,
+  profile
 }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -67,18 +68,7 @@ const PropertyCard = ({
           <span className="text-sm text-gray-600">{size}</span>
         </div>
         <div className="flex justify-between items-center">
-          <div className="flex items-center">
-            <Image
-              src="/agent.jpg" // Replace with your agent image path
-              alt={agentName}
-              width={30}
-              height={30}
-              className="rounded-full mr-2"
-            />
-            <span className="text-sm font-semibold text-gray-800">
-              {agentName}
-            </span>
-          </div>
+       
           <div>
             <button className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm mr-2">
               Call
@@ -89,7 +79,19 @@ const PropertyCard = ({
           </div>
         </div>
       </div>
-      <div className="p-4 border-t">
+      <div className="p-4 border-t flex justify-between">
+      <div className="flex items-center">
+            <Image
+              src={profile}// Replace with your agent image path
+              alt={agentName}
+              width={30}
+              height={30}
+              className="rounded-full mr-2"
+            />
+            <span className="text-sm font-semibold text-gray-800">
+              {agentName}
+            </span>
+          </div>
         <button className="text-secondary font-semibold">
           Details
         </button>

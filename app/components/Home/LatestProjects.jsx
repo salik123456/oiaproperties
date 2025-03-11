@@ -6,32 +6,32 @@ import { useState } from "react";
 import ProjectCard from "../Global/ProjectCard";
 
 const LatestProjects = () => {
-  const [activeProject, setActiveProject] = useState(null);
+
 
   const projects = [
     {
       id: 'project-1',
-      imgUrls: ['/project-gardenia.webp', '/project-2.png', '/property-3.jpg'], // Carousel images
+      imgUrls: ['/project-one.jpg', '/project-two.jpg', '/property-3.jpg'], // Carousel images
       title: 'Gardenia Bay',
       price: '805,000 AED',
       location: 'Abu Dhabi, Yas Island',
     },
     {
       id: 'project-2',
-      imgUrls: ['/project-2.png', '/property-3.jpg', '/project-gardenia.webp'],
+      imgUrls: ['/project-two.jpg', '/property-3.jpg', '/project-one.jpg'],
       title: 'Dubai Down Town',
       price: '950,000 AED',
       location: 'Dubai, Downtown',
     },
     {
       id: 'project-3',
-      imgUrls: ['/property-3.jpg', '/project-gardenia.webp', '/project-2.png'],
+      imgUrls: ['/property-3.jpg', '/property-one.jpg', '/property-two.jpg'],
       title: 'Sharjah Al Khan',
       price: '1,200,000 AED',
       location: 'Sharjah, Al Khan',
     },
   ];
-
+  const [activeProject, setActiveProject] = useState(projects[0].id);
   return (
     <section className='p-3' id="latest-projects">
       <motion.div
@@ -39,7 +39,7 @@ const LatestProjects = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`mx-auto flex flex-col`}
+        className={`mx-auto flex flex-col container`}
       >
         <h2 className="text-5xl font-semibold text-dark flex items-center mb-8">
           <span className="w-1 h-[50px] bg-secondary mr-3"></span>

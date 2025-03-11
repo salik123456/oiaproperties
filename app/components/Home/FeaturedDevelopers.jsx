@@ -2,11 +2,11 @@
 import Image from "next/image";
 
 const developers = [
-  { name: "TARAF", src: "/logos/taraf.png", width: 80, height: 40 },
-  { name: "IMKAN", src: "/logos/imkan.png", width: 80, height: 40 },
-  { name: "DEVELOPER 3", src: "/logos/thirdimg.png", width: 80, height: 40 },
-  { name: "RADIANT REAL ESTATE", src: "/logos/radiant.png", width: 80, height: 40  },
-  { name: "SAAS PROPERTIES", src: "/logos/saas.png", width: 80, height: 40 },
+  { name: "TARAF", src: "/logos/logo-one.jpg", width: 200, height: 200 },
+  { name: "IMKAN", src: "/logos/logo-one.jpg", width: 200, height: 200  },
+  { name: "DEVELOPER 3", src: "/logos/logo-one.jpg", width: 200, height: 200  },
+  { name: "RADIANT REAL ESTATE", src: "/logos/logo-one.jpg", width: 200, height: 200  },
+  { name: "SAAS PROPERTIES", src: "/logos/logo-one.jpg", width: 200, height: 200  },
 ];
 
 const FeaturedDevelopers = () => {
@@ -37,7 +37,7 @@ const FeaturedDevelopers = () => {
           <div className="flex flex-wrap justify-between items-center gap-6 mt-12">
             {developers.map((dev, index) => (
               <div key={index} className="flex justify-center">
-                <Image src={dev.src} alt={dev.name} width={dev.width} height={dev.height} className="h-[40px]" />
+                <Image src={dev.src} alt={dev.name} width={dev.width} height={dev.height} className="" />
               </div>
             ))}
           </div>

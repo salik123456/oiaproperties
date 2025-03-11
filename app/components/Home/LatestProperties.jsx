@@ -22,6 +22,7 @@ const LatestProperties = () => {
         bathrooms: '3 Bath',
         size: '1,142 FT',
         agentName: 'Jane Smith',
+        profile: '/profile/imageone.jpg'
       },
       {
         id: 2,
@@ -34,6 +35,33 @@ const LatestProperties = () => {
         bathrooms: '3 Bath',
         size: '1,142 FT',
         agentName: 'Jane Smith',
+        profile: '/profile/imagetwo.jpg'
+      },
+      {
+        id: 3,
+        images: ['/project-2.png', '/property-3.jpg', '/project-1.jpg'],
+        type: 'For Sale',
+        price: '$1,249,000',
+        buildingName: 'Noya Viva',
+        location: 'Abu Dhabi, Yas Island',
+        bedrooms: '3 Bed',
+        bathrooms: '3 Bath',
+        size: '1,142 FT',
+        agentName: 'Jane Smith',
+        profile: '/profile/imagethree.jpg'
+      },
+      {
+        id: 4,
+        images: ['/project-2.png', '/property-3.jpg', '/project-1.jpg'],
+        type: 'For Sale',
+        price: '$1,249,000',
+        buildingName: 'Noya Viva',
+        location: 'Abu Dhabi, Yas Island',
+        bedrooms: '3 Bed',
+        bathrooms: '3 Bath',
+        size: '1,142 FT',
+        agentName: 'Jane Smith',
+        profile: '/profile/imagefour.jpg'
       },
       // ... more for sale properties
     ],
@@ -49,6 +77,46 @@ const LatestProperties = () => {
         bathrooms: '2 Bath',
         size: '900 FT',
         agentName: 'John Doe',
+        profile: '/profile/imageone.jpg'
+      },
+      {
+        id: 6,
+        images: ['/featured-bg.webp', '/project-gardenia.webp', '/project-1.jpg'],
+        type: 'For Rent',
+        price: '$1,500/month',
+        buildingName: 'Rental Apartment',
+        location: 'Dubai Marina',
+        bedrooms: '2 Bed',
+        bathrooms: '2 Bath',
+        size: '900 FT',
+        agentName: 'John Doe',
+        profile: '/profile/imagetwo.jpg'
+      },
+      {
+        id: 7,
+        images: ['/featured-bg.webp', '/project-gardenia.webp', '/project-1.jpg'],
+        type: 'For Rent',
+        price: '$1,500/month',
+        buildingName: 'Rental Apartment',
+        location: 'Dubai Marina',
+        bedrooms: '2 Bed',
+        bathrooms: '2 Bath',
+        size: '900 FT',
+        agentName: 'John Doe',
+        profile: '/profile/imagethree.jpg'
+      },
+      {
+        id: 8,
+        images: ['/featured-bg.webp', '/project-gardenia.webp', '/project-1.jpg'],
+        type: 'For Rent',
+        price: '$1,500/month',
+        buildingName: 'Rental Apartment',
+        location: 'Dubai Marina',
+        bedrooms: '2 Bed',
+        bathrooms: '2 Bath',
+        size: '900 FT',
+        agentName: 'John Doe',
+        profile: '/profile/imagefour.jpg'
       },
       // ... more for rent properties
     ],
