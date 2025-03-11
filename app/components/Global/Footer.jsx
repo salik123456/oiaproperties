@@ -21,16 +21,16 @@ const Footer = () => {
       {/* Content Container */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12">
         {/* Top Section: Form */}
-        <div className="bg-[#8080809e] p-6 rounded-lg text-center md:flex md:items-center md:justify-between">
-          <p className="text-lg font-semibold">Our expert will help you buy the best property</p>
-          <div className="flex flex-col md:flex-row items-center gap-3 mt-4 md:mt-0">
-            <input type="text" placeholder="Full Name" className="px-4 py-2 rounded-md bg-white text-black w-full md:w-auto" />
-            <input type="email" placeholder="E-mail" className="px-4 py-2 rounded-md bg-white text-black w-full md:w-auto" />
-            <div className="flex items-center bg-white px-4 py-2 rounded-md w-full md:w-auto">
+        <div className="bg-[#8080809e] p-6 rounded-lg  md:flex md:flex-col  md:justify-between">
+          <p className="text-lg text-left font-semibold">Our expert will help you buy the best property</p>
+          <div className="flex flex-col md:flex-row justify-between items-center gap-2 mt-4">
+            <input type="text" placeholder="Full Name" className="px-4 py-2 rounded-md bg-white text-black w-full md:w-[28%]" />
+            <input type="email" placeholder="E-mail" className="px-4 py-2 rounded-md bg-white text-black w-full md:w-[28%]" />
+            <div className="flex items-center bg-white px-4 py-2 rounded-md w-full md:w-[28%]">
               <Image src="/english.png" alt="Flag" width={20} height={14} className="mr-2" />
               <input type="text" placeholder="+44" className="bg-transparent text-black flex-1 outline-none" />
             </div>
-            <button className="bg-secondary text-white px-6 py-2 rounded-md">Send request</button>
+            <button className="bg-secondary text-white px-6 py-2 rounded-full">Send request</button>
           </div>
         </div>
 
